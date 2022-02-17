@@ -2,7 +2,10 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:projet_tourisme/carousol.dart';
+import 'package:dots_indicator/dots_indicator.dart';
+import 'package:projet_tourisme/screens/Home_Screens.dart';
 
 import 'LineFive.dart';
 import 'LineFour.dart';
@@ -19,24 +22,38 @@ class page1 extends StatefulWidget {
 }
 
 class _page1State extends State<page1> {
+  // double _currentPosition = 0.0;
+
+  // get pageLength => null;
+
+  // get currentIndexPage => null;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFE7EAEF),
-      appBar: AppBar(
-        elevation: 0.0,
-        backgroundColor: Color(0xFFE7EAEF),
-      ),
+      // appBar: AppBar(
+      //   elevation: 0.0,
+      //   backgroundColor: Color(0xFFE7EAEF),
+      // ),
       body: ListView(
         children: <Widget>[
           carousol(),
+//           DotsIndicator(
+//   dotsCount: pageLength,
+//   position: currentIndexPage,
+//   decorator: DotsDecorator(
+//     size: const Size.square(9.0),
+//     activeSize: const Size(18.0, 9.0),
+//     activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+//   ),
+// ),
           Padding(
             padding: const EdgeInsets.all(21.0),
             child: Column(
               children: [
                 RowInkWel(),
                 SizedBox(
-                  height: 50,
+                  height: 40,
                 ),
                 LineOne(),
                 SizedBox(
@@ -58,15 +75,6 @@ class _page1State extends State<page1> {
               ],
             ),
           ),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff98B821),
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Mon\ncarnet'),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Mon\ncarnet'),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Mon\ncarnet'),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Mon\ncarnet'),
         ],
       ),
     );

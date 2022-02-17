@@ -89,7 +89,7 @@ class LineTwo extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    "Savoir-Faire",
+                    "Restaurants",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
