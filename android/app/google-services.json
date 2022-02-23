@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483374884099",
+    "project_id": "monhotel-58155",
+    "storage_bucket": "monhotel-58155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483374884099:android:d1836713f10377c217f536",
+        "android_client_info": {
+          "package_name": "com.example.projet_tourisme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483374884099-knssf031e7lnltqv5ss66msbfmeur9so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFZ2JeNOWYRBt4YHi98p2cdQI24S_-uPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483374884099-knssf031e7lnltqv5ss66msbfmeur9so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

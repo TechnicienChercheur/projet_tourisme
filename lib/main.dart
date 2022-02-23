@@ -4,6 +4,8 @@ import 'package:projet_tourisme/page1.dart';
 
 import 'package:projet_tourisme/screens/home_screens.dart';
 
+import 'Authenticate_Screen/inscription.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: HomScreen(),
+      home: Inscription_page(),
       debugShowCheckedModeBanner: false,
     );
   }

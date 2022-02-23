@@ -5,8 +5,15 @@ class ListHashtagView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("List hashtags"),
+    return const Scaffold(
+      // appBar: AppBar(
+      //   title: Text("Mon Cahier"),
+      // ),
+      body: Center(
+        child: Text(
+          "List hashtags",
+        ),
+      ),
     );
   }
 }

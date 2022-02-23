@@ -30,6 +30,7 @@ class _HomScreenState extends State<HomScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home"),
+        centerTitle: true,
       ),
       body: PageView(
         onPageChanged: (index) {
@@ -42,7 +43,7 @@ class _HomScreenState extends State<HomScreen> {
         controller: _pageController,
         children: [
           page1(),
-          const HomeView(),
+          // const HomeView(),
           const ListHashtagView(),
           const reglage(),
           const Liste(),
