@@ -8,10 +8,9 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:projet_tourisme/screens/Home_Screens.dart';
 
 import 'LineFive.dart';
-import 'LineFour.dart';
-import 'LineFree.dart';
+
 import 'LineOne.dart';
-import 'LineTwo.dart';
+
 import 'RowInkWel.dart';
 
 class page1 extends StatefulWidget {
@@ -56,18 +55,6 @@ class _page1State extends State<page1> {
                   height: 40,
                 ),
                 LineOne(),
-                SizedBox(
-                  height: 20,
-                ),
-                LineTwo(),
-                SizedBox(
-                  height: 20,
-                ),
-                LineFree(),
-                SizedBox(
-                  height: 20,
-                ),
-                LineFour(),
                 SizedBox(
                   height: 20,
                 ),

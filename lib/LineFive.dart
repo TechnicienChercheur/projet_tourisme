@@ -12,13 +12,13 @@ class LineFive extends StatelessWidget {
       children: [
         Container(
           width: 171,
-          height: 38,
+          height: 70,
           decoration: BoxDecoration(
               color: Color(0xFFE7EAEF), borderRadius: BorderRadius.circular(8)),
           child: Row(
             children: [
               Container(
-                height: 38,
+                height: 70,
                 width: 38,
                 decoration: BoxDecoration(
                   color: Color(0xFF47A0D3),
@@ -26,15 +26,14 @@ class LineFive extends StatelessWidget {
                     topLeft: Radius.circular(6),
                     bottomLeft: Radius.circular(6),
                   ),
-                ),
-                child: Icon(
-                  Icons.house_outlined,
-                  color: Colors.white,
+                  image: DecorationImage(
+                      image: AssetImage("doss/images/img2.jpeg"),
+                      fit: BoxFit.cover),
                 ),
               ),
               Container(
                 width: 133,
-                height: 38,
+                height: 70,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 207, 206, 206),
                   borderRadius: BorderRadius.only(
@@ -57,13 +56,13 @@ class LineFive extends StatelessWidget {
         ),
         Container(
           width: 171,
-          height: 38,
+          height: 70,
           decoration: BoxDecoration(
-              color: Color(0xFFE7EAEF), borderRadius: BorderRadius.circular(8)),
+              color: Color(0xFFE7EAEF), borderRadius: BorderRadius.circular(3)),
           child: Row(
             children: [
               Container(
-                height: 38,
+                height: 70,
                 width: 38,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 3, 88, 138),
@@ -71,15 +70,14 @@ class LineFive extends StatelessWidget {
                     topLeft: Radius.circular(6),
                     bottomLeft: Radius.circular(6),
                   ),
-                ),
-                child: Icon(
-                  Icons.travel_explore,
-                  color: Colors.white,
+                  image: DecorationImage(
+                      image: AssetImage("doss/images/img2.jpeg"),
+                      fit: BoxFit.cover),
                 ),
               ),
               Container(
                 width: 133,
-                height: 38,
+                height: 70,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 207, 206, 206),
                   borderRadius: BorderRadius.only(

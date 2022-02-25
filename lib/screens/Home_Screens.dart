@@ -6,6 +6,7 @@ import 'package:projet_tourisme/screens/views/Home_View.dart';
 import 'package:projet_tourisme/screens/views/list_hastag_view.dart';
 import 'package:projet_tourisme/screens/views/liste.dart';
 import 'package:projet_tourisme/screens/views/reglage.dart';
+import 'package:projet_tourisme/service_firebase/authenfirebase.dart';
 
 class HomScreen extends StatefulWidget {
   const HomScreen({Key? key}) : super(key: key);
@@ -15,6 +16,7 @@ class HomScreen extends StatefulWidget {
 }
 
 class _HomScreenState extends State<HomScreen> {
+  final AuthenticationService _auth = AuthenticationService();
   final PageController _pageController = PageController(keepPage: false);
   int _currentIndex = 0;
 
@@ -29,8 +31,23 @@ class _HomScreenState extends State<HomScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home"),
-        centerTitle: true,
+        backgroundColor: Colors.amber,
+        elevation: 0.0,
+        title: Text("MonHotel"),
+        actions: <Widget>[
+          TextButton.icon(
+              onPressed: () async {
+                await _auth.signOut();
+              },
+              icon: Icon(
+                Icons.logout_sharp,
+                color: Colors.black,
+              ),
+              label: Text(
+                "Logout",
+                style: TextStyle(color: Colors.black),
+              ))
+        ],
       ),
       body: PageView(
         onPageChanged: (index) {

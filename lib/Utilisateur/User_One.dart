@@ -1,7 +1,16 @@
-import 'package:firebase_auth/firebase_auth.dart';
+// ignore_for_file: file_names
 
 class AppUser {
   final String uid;
 
-  AppUser({required this.uid});
+  AppUser(this.uid);
+}
+
+class AppUserData {
+  final String uid;
+  final String name;
+  final int waterCounter;
+
+  AppUserData(
+      {required this.uid, required this.name, required this.waterCounter});
 }
